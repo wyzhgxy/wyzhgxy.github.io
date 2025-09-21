@@ -20,12 +20,12 @@
             <tr style="padding:0px">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
-                  Jon Barron
+                  Yizhuo Wu
                 </p>
                 <p>
-		            <p>I am a fourth-year undergrad at <a href="https://eecs.pku.edu.cn/xxkxjsxy/Home/HOME.html">EECS</a> ,  <a href="https://english.pku.edu.cn/">Peking University</a>where I lead a small team that mostly works on <a href="https://www.matthewtancik.com/nerf">NeRF</a>.</p>
+		            <p>I am a fourth-year undergrad at <a href="https://eecs.pku.edu.cn/xxkxjsxy/Home/HOME.html">EECS</a> ,  <a href="https://english.pku.edu.cn/">Peking University</a>.</p>
                 <p>
-		            Currently, I'm a research intern at <a href="https://bair.berkeley.edu/">BAIR</a>, UC Berkeley, adviced by <a href="https://geng-haoran.github.io/">Haoran Geng</a>, working closely with Prof. <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a> and Prof. <a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>.
+		            Currently, I'm a research intern at <a href="https://bair.berkeley.edu/">BAIR</a>, UC Berkeley, mentored by <a href="https://geng-haoran.github.io/">Haoran Geng</a>, working closely with Prof. <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a> and Prof. <a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>.
                 At Peking University, I am advised by Prof. <a href="https://zsdonghao.github.io/">Hao Dong</a> as a part of PKU-Agibot Lab.  
                 </p>
                 <p>
@@ -65,10 +65,10 @@
           </tr>
         </tbody></table>
         
-        table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
             <td>
-              <heading>Publications <font size=4>(* indicates equal contribution)</font> </heading>
+              <heading>Publications <font size=4>(* indicates equal contribution)</font> <font size=4></font> </heading>
             </td>
           </tr>
         </tbody></table>
@@ -85,11 +85,23 @@
         </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          
-          <tr style="vertical-align:left;">
-            <td style="padding:20px;width:35%;vertical-align:center">
-              <img src="images/simlauncher-preview.png" alt="3DSP" width="100%">
+          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()" class="project-item all">
+            <td style="padding:10px; width:20%;vertical-align:text-top">
+              <div class="one">
+                <img src='images/simlauncher-preview.png' width=100%>
+              </div>
+              <script type="text/javascript">
+                function smerf_start() {
+                  document.getElementById('smerf_image').style.opacity = "1";
+                }
+      
+                function smerf_stop() {
+                  document.getElementById('smerf_image').style.opacity = "0";
+                }
+                smerf_stop()
+              </script>
             </td>
+    
             <td style="padding:20px;width:75%;vertical-align:center">
               <papertitle>
                 SimLauncher: Launching Sample-Efficient Real-world Robotic Reinforcement Learning via Simulation Pre-training
