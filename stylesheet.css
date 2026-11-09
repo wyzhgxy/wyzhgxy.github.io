@@ -441,3 +441,6 @@ ul.news .emoji { margin-right: 6px; }
 
 .thumb video.teaser { opacity: 1; object-fit: cover; }
 .author-note { display: block; font-size: 13px; color: var(--muted); }
+
+.paper-links a.stars { margin-left: 6px; }
+.paper-links a.stars img { height: 18px; vertical-align: -4px; }
