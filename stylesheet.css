@@ -444,3 +444,10 @@ ul.news .emoji { margin-right: 6px; }
 
 .paper-links a.stars { margin-left: 6px; }
 .paper-links a.stars img { height: 18px; vertical-align: -4px; }
+
+/* Block I is taller than wide, so give it a square box instead of the round seal crop */
+td.exp-logo img.logo.ring {
+  padding: 6px 16px;
+  background: #ffffff;
+  border-radius: 12px;
+}
